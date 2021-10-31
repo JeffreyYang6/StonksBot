@@ -17,5 +17,8 @@ async def on_message(message):
 
     if message.content.startswith(PREFIX + 'hello'):
         await message.channel.send('Hello!')
+    
+    if message.content.startswith(PREFIX + 'gb'):
+        await message.channel.send('Goodbye!')
 
 client.run(TOKEN)
